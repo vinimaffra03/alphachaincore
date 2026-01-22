@@ -76,17 +76,17 @@
 		"type": "monthly",
 		"title": "Alpha Pro",
 		"icon": "/images/pricing/ultimate.svg",
-		"subTitle": "Hedge para LP + consultoria estratégica",
+		"subTitle": "Gestão avançada de LP + consultoria estratégica",
 		"pricing": "29,90",
 		"pricingUnit": "R$",
-		"description": "Hedge automatizado para LP, consultoria e análises profundas com a equipe AlphaChain.",
+		"description": "Gestão avançada de LP, consultoria e análises profundas com a equipe AlphaChain.",
 		"features": [
 			{
 				"name": "Tudo do Trader",
 				"isIncluded": true
 			},
 			{
-				"name": "Hedge automatizado para LP",
+				"name": "Gestão avançada de LP",
 				"isIncluded": true
 			},
 			{

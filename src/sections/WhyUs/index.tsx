@@ -4,7 +4,7 @@ import Image from "next/image";
 const withFeatures = [
 	{
 		title:
-			"Hedge automático para LP com controle de exposição e redução de impermanent loss.",
+			"Gestão avançada de LP com controle de exposição e redução de impermanent loss.",
 	},
 	{
 		title:
@@ -19,7 +19,7 @@ const withFeatures = [
 const withoutFeatures = [
 	{
 		title:
-			"Operações sem hedge deixam LP exposto a oscilações e custos invisíveis.",
+			"Operações sem gestão avançada deixam LP exposto a oscilações e custos invisíveis.",
 	},
 	{
 		title:
@@ -33,69 +33,71 @@ const withoutFeatures = [
 
 const WhyUs: React.FC = () => {
   return (
-    <div className="flex flex-col items-start justify-start gap-8 min-h-[80vh] px-[50px] lg:px-[200px]">
-      <div className="flex flex-col items-start gap-2">
-        <p className="font-medium uppercase text-gray-900">
+    <div className="flex flex-col items-center justify-center gap-8 sm:gap-12 min-h-[80vh] px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-[100px] py-12 bg-gray-50 dark:bg-gray-900">
+      <div className="flex flex-col items-center text-center gap-4 sm:gap-6 max-w-4xl">
+        <p className="font-medium uppercase text-gray-900 dark:text-white text-sm sm:text-base">
           Performance cripto
         </p>
-        <h2 className="text-4xl font-semibold">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-center">
           Mais controle, menos ruído <br /> nas decisões de trade
         </h2>
       </div>
 
-      <Tabs defaultValue="with" className="w-full">
-        <TabsList>
+      <Tabs defaultValue="with" className="w-full max-w-6xl">
+        <TabsList className="grid w-full grid-cols-2">
           <TabsTrigger value="with">Com AlphaChain</TabsTrigger>
           <TabsTrigger value="without">Sem AlphaChain</TabsTrigger>
         </TabsList>
         <TabsContent value="with">
-          <div className="flex items-start gap-2 justify-between w-full mt-16">
-            <div className="flex flex-col items-start gap-6">
-              <h1 className="text-[24px] font-semibold">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full mt-8 lg:mt-16">
+            <div className="flex flex-col items-center lg:items-start gap-6 text-center lg:text-left w-full lg:w-1/2">
+              <h1 className="text-xl sm:text-2xl font-semibold">
                 Estratégia automatizada com suporte humano
               </h1>
               <div className="flex flex-col gap-4">
                 {withFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-2">
+                  <div key={index} className="flex items-start gap-3">
                     <Image
                       src="/images/pricing/included.svg"
                       width={20}
                       height={20}
                       alt="Included"
+                      className="mt-1 flex-shrink-0"
                     />
-                    <p className="text-gray-600 font-normal w-[650px] mt-[-2px]">
+                    <p className="text-gray-600 dark:text-gray-300 font-normal text-sm sm:text-base">
                       {feature.title}
                     </p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="min-h-[434px] w-[486px] bg-gray-200 rounded-lg"></div>
+            <div className="min-h-[300px] sm:min-h-[400px] w-full lg:w-1/2 max-w-[500px] bg-gray-200 dark:bg-gray-700 rounded-lg"></div>
           </div>
         </TabsContent>
         <TabsContent value="without">
-          <div className="flex items-start gap-2 justify-between w-full mt-16">
-            <div className="flex flex-col items-start gap-6">
-              <h1 className="text-[24px] font-semibold">
+          <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 w-full mt-8 lg:mt-16">
+            <div className="flex flex-col items-center lg:items-start gap-6 text-center lg:text-left w-full lg:w-1/2">
+              <h1 className="text-xl sm:text-2xl font-semibold">
                 Operar sem método gera ruído <br /> e decisões tardias
               </h1>
               <div className="flex flex-col gap-4">
                 {withoutFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-start gap-2">
+                  <div key={index} className="flex items-start gap-3">
                     <Image
                       src="/images/pricing/close-circle.svg"
                       width={20}
                       height={20}
                       alt="Included"
+                      className="mt-1 flex-shrink-0"
                     />
-                    <p className="text-gray-600 font-normal w-[650px] mt-[-2px]">
+                    <p className="text-gray-600 dark:text-gray-300 font-normal text-sm sm:text-base">
                       {feature.title}
                     </p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="min-h-[434px] w-[486px] bg-gray-200 rounded-lg"></div>
+            <div className="min-h-[300px] sm:min-h-[400px] w-full lg:w-1/2 max-w-[500px] bg-gray-200 dark:bg-gray-700 rounded-lg"></div>
           </div>
         </TabsContent>
       </Tabs>

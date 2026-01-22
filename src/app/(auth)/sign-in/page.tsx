@@ -22,13 +22,13 @@ const SignIn = () => {
 	}, [session, router]);
 
 	return (
-		<div className="grid grid-cols-2 items-center min-h-screen">
-			<div className="w-full h-full bg-gray-900"></div>
-			<div className="flex items-center justify-center">
-				<div className="flex flex-col items-center gap-4">
+		<div className="flex flex-col lg:grid lg:grid-cols-2 items-center min-h-screen">
+			<div className="w-full h-full bg-gray-900 lg:min-h-screen"></div>
+			<div className="flex items-center justify-center p-4 lg:p-0">
+				<div className="flex flex-col items-center gap-4 w-full max-w-md">
 					<h1 className="text-3xl font-bold">Welcome back</h1>
-					<p className="text-gray-500">Sign in to your account to continue</p>
-					<div className="w-[350px]">
+					<p className="text-gray-500 text-center">Sign in to your account to continue</p>
+					<div className="w-full">
 						<Auth
 							supabaseClient={supabaseClient}
 							providers={["google"]}
