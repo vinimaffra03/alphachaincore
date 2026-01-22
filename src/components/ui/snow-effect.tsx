@@ -39,7 +39,7 @@ const SnowEffect = () => {
 				id: i,
 				x: Math.random() * window.innerWidth,
 				y: Math.random() * window.innerHeight, // Começa do meio da tela
-				size: Math.random() * 1.5 + 0.5, // Tamanhos menores (0.5-2px)
+				size: Math.random() * 2 + 1.5, // Tamanhos um pouco maiores (1.5-3.5px)
 				speed: Math.random() * 3 + 1, // Velocidades mais rápidas (1-4px)
 				opacity: Math.random() * 0.4 + 0.1, // Opacidade mais baixa (0.1-0.5)
 				type: Math.random() > 0.6 ? 'bitcoin' : 'snow' // Mais moedinhas (40% bitcoin, 60% neve)
@@ -68,7 +68,7 @@ const SnowEffect = () => {
 				if (flake.type === 'bitcoin') {
 					// Desenhar moedinha de bitcoin clara e pequena
 					ctx.fillStyle = '#9CA3AF'; // Azul claro
-					ctx.font = `bold ${flake.size * 8}px Arial`; // Fonte proporcional ao tamanho menor
+					ctx.font = `bold ${flake.size * 7}px Arial`; // Fonte proporcional ao tamanho maior
 					ctx.textAlign = 'center';
 					ctx.textBaseline = 'middle';
 					ctx.fillText('₿', flake.x, flake.y);
