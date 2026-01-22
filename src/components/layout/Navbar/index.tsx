@@ -30,7 +30,7 @@ const links = [
 ];
 
 const Navbar = () => {
-	const [isMenuOpen, setIsMenuOpen] = useState(true);
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const supabaseClient = useSupabaseClient();
 
