@@ -1,0 +1,111 @@
+[
+	{
+		"type": "monthly",
+		"title": "Starter",
+		"icon": "/images/pricing/free.svg",
+		"subTitle": "Para começar com sinais e conteúdos",
+		"pricing": "0",
+		"pricingUnit": "R$",
+		"description": "Acesso aos indicadores essenciais, newsletter semanal e aulas introdutórias.",
+		"features": [
+			{
+				"name": "Indicadores essenciais",
+				"isIncluded": true
+			},
+			{
+				"name": "Newsletter semanal",
+				"isIncluded": true
+			},
+			{
+				"name": "Aulas introdutórias",
+				"isIncluded": true
+			},
+			{
+				"name": "Relatórios avançados",
+				"isIncluded": false
+			},
+			{
+				"name": "Bots de trade",
+				"isIncluded": false
+			},
+			{
+				"name": "Consultoria estratégica",
+				"isIncluded": false
+			}
+		],
+		"button": "Começar agora"
+	},
+	{
+		"type": "monthly",
+		"title": "Trader",
+		"icon": "/images/pricing/pro.svg",
+		"subTitle": "Bots e indicadores para operar com disciplina",
+		"pricing": "5",
+		"pricingUnit": "R$",
+		"description": "Bots de trade, indicadores completos e relatórios semanais para decisões rápidas.",
+		"popular": true,
+		"features": [
+			{
+				"name": "Tudo do Starter",
+				"isIncluded": true
+			},
+			{
+				"name": "Bots de trade",
+				"isIncluded": true
+			},
+			{
+				"name": "Alertas em tempo real",
+				"isIncluded": true
+			},
+			{
+				"name": "Relatórios avançados",
+				"isIncluded": true
+			},
+			{
+				"name": "Backtests rápidos",
+				"isIncluded": true
+			},
+			{
+				"name": "Suporte prioritário",
+				"isIncluded": true
+			}
+		],
+		"button": "Quero este plano"
+	},
+	{
+		"type": "monthly",
+		"title": "Alpha Pro",
+		"icon": "/images/pricing/ultimate.svg",
+		"subTitle": "Hedge para LP + consultoria estratégica",
+		"pricing": "29,90",
+		"pricingUnit": "R$",
+		"description": "Hedge automatizado para LP, consultoria e análises profundas com a equipe AlphaChain.",
+		"features": [
+			{
+				"name": "Tudo do Trader",
+				"isIncluded": true
+			},
+			{
+				"name": "Hedge automatizado para LP",
+				"isIncluded": true
+			},
+			{
+				"name": "Consultoria estratégica",
+				"isIncluded": true
+			},
+			{
+				"name": "Relatórios premium",
+				"isIncluded": true
+			},
+			{
+				"name": "Rotinas guiadas",
+				"isIncluded": true
+			},
+			{
+				"name": "Atendimento dedicado",
+				"isIncluded": true
+			}
+		],
+		"button": "Falar com consultor"
+	}
+]
