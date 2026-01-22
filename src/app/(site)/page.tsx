@@ -11,7 +11,7 @@ import WhyUs from "@/sections/WhyUs";
 
 export default function Home() {
 	return (
-		<main className="bg-gray-50">
+		<main className="bg-background text-foreground transition-colors duration-300">
 			<Navbar />
 			<div className="px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-[100px] pt-12">
 				<Header />

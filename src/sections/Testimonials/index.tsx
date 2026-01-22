@@ -1,4 +1,7 @@
+"use client";
+
 import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 
 interface Testimonial {
 	title: string;
@@ -79,9 +82,11 @@ const Card = ({ title, description, user }: Testimonial) => {
 			<div className="w-full flex flex-col items-start gap-3 mt-auto">
 				<Separator className="bg-gray-200 dark:bg-gray-700" />
 				<div className="flex items-center gap-3">
-					<img
+					<Image
 						src={user.image}
 						alt={user.name}
+						width={56}
+						height={56}
 						className="w-12 h-12 sm:w-14 sm:h-14 rounded-full"
 					/>
 					<div className="flex flex-col items-start">
